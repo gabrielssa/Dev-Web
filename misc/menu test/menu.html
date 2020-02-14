@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Test</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+      $(function() {
+      $(window).on("scroll", function() {
+      if($(window).scrollTop() > 100) {
+        //Ao descer a tela
+      document.getElementById("xablau").style.fontSize = "16px";
+      document.getElementById("xablau").style.margin = "0px";
+      document.getElementById("logoGrande").src = "img/logo_icone.png";
+      document.getElementById("logoGrande").style.width = "70px";
+      } else {
+        //Quando tá la em cima
+        document.getElementById("xablau").style.fontSize = "20px";
+        document.getElementById("xablau").style.margin = "20px 0px 5px 0px";
+        document.getElementById("logoGrande").src = "img/logo_grande.png";
+        document.getElementById("logoGrande").style.width = "300px";
+      }
+      });
+      });
+
+      
+    </script>
+
+    </head>
+
+  <body>
+
+    <div id="xablau" class="sidebar-wrapper">
+
+      <nav>
+        <img id="logoGrande" src="img/logo_grande.png">
+        <ul>
+          <li>Home</li>
+          <li>Players Online</li>
+          <li>Cadastro</li>
+          <li>Loja</li>
+       </ul>
+      </nav>
+
+    </div>
+  </body>
+</html>
